@@ -1,5 +1,5 @@
 export type Stock = { symbol: string; name: string; price: number; change: number; volume: string; cap: string; sector: string; mark: string };
-export const stocks: Stock[] = [
+export const stocks: [Stock, ...Stock[]] = [
   { symbol: 'AAPL', name: 'Apple Inc.', price: 227.63, change: 1.24, volume: '48.2M', cap: '3.46T', sector: 'Technology', mark: 'apple' },
   { symbol: 'NVDA', name: 'NVIDIA Corporation', price: 134.80, change: 3.42, volume: '182.5M', cap: '3.30T', sector: 'Technology', mark: 'nvidia' },
   { symbol: 'MSFT', name: 'Microsoft Corporation', price: 428.76, change: 0.86, volume: '21.4M', cap: '3.19T', sector: 'Technology', mark: 'microsoft' },
